@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main  # O la rama que utilices para producción
+
+media_folder: "static/images/uploads"  # Carpeta para almacenar imágenes
+public_folder: "/images/uploads"  # URL pública de las imágenes
+
+collections:
+  - name: "header"
+    label: "Header"
+    folder: "content/header"  # Carpeta donde se almacenarán los archivos de header
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      # Descomenta y ajusta según tus necesidades
+      # - { label: "Subtitle", name: "subtitle", widget: "string" }
+      # - { label: "Background Image", name: "background_image", widget: "image" }
+
+users:
+  - email: "alfreduoh@gmail.com"  # Tu email
+    password: "1234"  # Tu contraseña
